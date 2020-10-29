@@ -1,0 +1,41 @@
+{
+  "countries" : [{
+	  "id" : 1,
+	  "name" : "Ireland",
+	  "cities" : [{
+		  "id" : 101,
+		  "name" : "Dublin",
+		  "population" : 554554
+	  },{
+		  "id" : 102,
+		  "name" : "Galway",
+		  "population" : 75000
+	  },{
+		  "id" : 103,
+		  "name" : "Cork"
+	  },{
+		  "id" : 104,
+		  "name" : "Limerick"
+	  }],
+	
+  },{
+	  "id" : 2,
+	  "name" : "United Kingdom",
+	  "cities" : [{
+		  "id" : 201,
+		  "name" : "London"
+	  },{
+		  "id" : 202,
+		  "name" : "Birmingham",
+		  "population" : 1137100
+	  },{
+		  "id" : 203,
+		  "name" : "Manchester"
+	  }],
+  }],
+  "bordering" : {
+	  "1" : [2],
+	  "2" : [1],
+
+  }
+}

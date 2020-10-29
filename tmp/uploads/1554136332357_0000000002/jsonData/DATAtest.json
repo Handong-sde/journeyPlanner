@@ -1,0 +1,27 @@
+{
+  "countries" : [{
+	  "id" : 1,
+	  "name" : "Ireland",
+	  "cities" : [{
+		  "id" : 101,
+		  "name" : "Dublin",
+		  "population" : 554554
+	  },{
+		  "id" : 102,
+		  "name" : "Galway",
+		  "population" : 75000
+	  },{
+		  "id" : 103,
+		  "name" : "Cork"
+	  },{
+		  "id" : 104,
+		  "name" : "Limerick"
+	  }],
+	
+  }],
+  "bordering" : {
+	  "1" : [2],
+	  "2" : [1],
+
+  }
+}

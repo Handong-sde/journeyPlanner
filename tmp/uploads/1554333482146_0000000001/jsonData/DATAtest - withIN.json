@@ -1,0 +1,419 @@
+{
+  "countries" : [{
+	  "id" : 1,
+	  "name" : "Ireland",
+	  "cities" : [{
+		  "id" : 101,
+		  "name" : "Dublin",
+		  "population" : 554554,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 102,
+		  "name" : "Galway",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 103,
+		  "name" : "Cork",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 104,
+		  "name" : "Limerick",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 101
+  },{
+	  "id" : 2,
+	  "name" : "United Kingdom",
+	  "cities" : [{
+		  "id" : 201,
+		  "name" : "London",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 202,
+		  "name" : "Birmingham",
+		  "population" : 1137100,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 203,
+		  "name" : "Manchester",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 201
+  },{
+	  "id" : 3,
+	  "name" : "United States",
+	  "cities" : [{
+		  "id" : 301,
+		  "name" : "Washington DC",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 302,
+		  "name" : "New York City",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 303,
+		  "name" : "Los Angeles",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 304,
+		  "name" : "Chicago",
+		  "population" : 36234424,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 301
+  },{
+	  "id" : 4,
+	  "name" : "Canada",
+	  "cities" : [{
+		  "id" : 401,
+		  "name" : "Ottawa",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 402,
+		  "name" : "Toronto",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 401
+  },{
+	  "id" : 5,
+	  "name" : "Mexico",
+	  "cities" : [{
+		  "id" : 501,
+		  "name" : "Mexico City",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 502,
+		  "name" : "Tijuana",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 503,
+		  "name" : "JuÃ¡rez",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 504,
+		  "name" : "Acapulco",
+		  "population" : 1137100,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 501
+  },{
+	  "id" : 6,
+	  "name" : "Italy",
+	  "cities" : [{
+		  "id" : 601,
+		  "name" : "Rome",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 602,
+		  "name" : "Milan",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 603,
+		  "name" : "Naples",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 601
+  },{
+	  "id" : 17,
+	  "name" : "Germany",
+	  "cities" : [{
+		  "id" : 1701,
+		  "name" : "Berlin",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 1702,
+		  "name" : "Frankfurt",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 1703,
+		  "name" : "Hamburg",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 1701
+  },{
+	  "id" : 7,
+	  "name" : "Austria",
+	  "cities" : [{
+		  "id" : 701,
+		  "name" : "Vienna",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 702,
+		  "name" : "Innsbruck",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 703,
+		  "name" : "Salzburg",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 701
+  },{
+	  "id" : 8,
+	  "name" : "Switzerland",
+	  "cities" : [{
+		  "id" : 801,
+		  "name" : "Bern",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 802,
+		  "name" : "Zurich",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 803,
+		  "name" : "Lausanne",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 804,
+		  "name" : "Lugano",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 801
+  },{
+	  "id" : 9,
+	  "name" : "Nigeria",
+	  "cities" : [{
+		  "id" : 901,
+		  "name" : "Lagos",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 902,
+		  "name" : "Benin",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 901
+  },{
+	  "id" : 10,
+	  "name" : "China",
+	  "cities" : [{
+		  "id" : 1001,
+		  "name" : "Beijing",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 1002,
+		  "name" : "Hong Kong",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 1003,
+		  "name" : "Macau",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 1001
+  },{
+	  "id" : 11,
+	  "name" : "Russia",
+	  "cities" : [{
+		  "id" : 1101,
+		  "name" : "Moscow",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 1102,
+		  "name" : "Saint Petersburg",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  },{
+		  "id" : 1103,
+		  "name" : "Novosibirsk",
+		  "population" : 75000,
+		  "interest" : [
+			{
+			"type" : "Museum"
+			}
+			]
+	  }],
+	  "capital" : 1101
+  }],
+  "bordering" : {
+	  "1" : [2],
+	  "2" : [1],
+	  "3" : [4, 5],
+	  "4" : [3],
+	  "5" : [3],
+	  "6" : [7, 8],
+	  "7" : [6, 8, 17],
+	  "8" : [6, 7, 17],
+	  "9" : [],
+	 "10" : [11],
+	 "11" : [10],
+	 "17" : [7, 8]
+  }
+}

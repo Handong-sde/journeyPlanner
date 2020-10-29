@@ -1,0 +1,39 @@
+#{extends 'main.html' /}
+#{set title:'show Country' /}
+
+<div>
+    <h1 class="name"><a href="/">World Map City Details</a></h1>
+</div>
+
+<div>
+   <a href="/check">Check</a> :: <a href="/planner">Journey Planner</a>:: <a href="/admin/">Admin Area</a>
+</div>
+
+<div>
+
+<h2>${city.cityName}</h2>
+#{if interest}
+        <div >    
+            There are <strong>${interest.size()}</strong> interest in the database.
+
+            <table style="width:100%">
+                <tr>
+                    <th>type</th>
+   
+                </tr>
+                #{list items:interest, as:'interest'}
+                <tr>
+                    <td>${interest.type}</td>
+                </tr>
+                #{/list}
+            </table>
+        </div>
+    #{/if}
+    #{else}
+        <div>
+            Unfortunately, there are no interest in the database.
+        </div>
+    #{/else}
+</div>
+
+

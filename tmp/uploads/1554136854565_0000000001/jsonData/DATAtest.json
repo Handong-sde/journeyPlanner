@@ -1,0 +1,22 @@
+{
+  "countries" : [{
+	  "id" : 2,
+	  "name" : "United Kingdom",
+	  "cities" : [{
+		  "id" : 201,
+		  "name" : "London"
+	  },{
+		  "id" : 202,
+		  "name" : "Birmingham",
+		  "population" : 1137100
+	  },{
+		  "id" : 203,
+		  "name" : "Manchester"
+	  }],
+  }],
+  "bordering" : {
+	  "1" : [2],
+	  "2" : [1],
+
+  }
+}
