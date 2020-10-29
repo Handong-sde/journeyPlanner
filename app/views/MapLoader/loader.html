@@ -1,0 +1,35 @@
+#{extends 'main.html' /}
+#{set title:'JSON loader' /}
+
+<div>
+    <h1><a href="/">World Map Loader Page</a></h1>
+</div>
+
+
+<div>
+#{form @uploadJSON(), enctype:'multipart/form-data'}
+    <h2>Upload a JSON data file:</h2>
+    <p>
+        Select this checkbox to clear the database as well: <input type="checkbox" id="clearData" name="clearData"  checked/>
+    </p>
+    <input type="file" id="jsonData" name="jsonData" />
+    <input type="submit" value="Upload" />
+#{/}
+</div>
+
+#{if flash.success}
+<div>
+    <p style="color:green">${flash.success}</p>
+</div>
+#{/if}
+
+#{if flash.error}
+<div>
+    <p style="color:red">${flash.error}</p>
+</div>
+#{/if}
+
+
+<div>
+    <h3><a href="/">back to main-----></a></h3>
+</div>

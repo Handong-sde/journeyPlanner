@@ -1,0 +1,196 @@
+{
+  "countries" : [{
+	  "id" : 1,
+	  "name" : "Ireland",
+	  "cities" : [{
+		  "id" : 101,
+		  "name" : "Dublin",
+		  "population" : 554554
+	  },{
+		  "id" : 102,
+		  "name" : "Galway",
+		  "population" : 75000
+	  },{
+		  "id" : 103,
+		  "name" : "Cork"
+	  },{
+		  "id" : 104,
+		  "name" : "Limerick"
+	  }],
+	  "capital" : 101
+  },{
+	  "id" : 2,
+	  "name" : "United Kingdom",
+	  "cities" : [{
+		  "id" : 201,
+		  "name" : "London"
+	  },{
+		  "id" : 202,
+		  "name" : "Birmingham",
+		  "population" : 1137100
+	  },{
+		  "id" : 203,
+		  "name" : "Manchester"
+	  }],
+	  "capital" : 201
+  },{
+	  "id" : 3,
+	  "name" : "United States",
+	  "cities" : [{
+		  "id" : 301,
+		  "name" : "Washington DC"
+	  },{
+		  "id" : 302,
+		  "name" : "New York City"
+	  },{
+		  "id" : 303,
+		  "name" : "Los Angeles"
+	  },{
+		  "id" : 304,
+		  "name" : "Chicago",
+		  "population" : 36234424
+	  }],
+	  "capital" : 301
+  },{
+	  "id" : 4,
+	  "name" : "Canada",
+	  "cities" : [{
+		  "id" : 401,
+		  "name" : "Ottawa"
+	  },{
+		  "id" : 402,
+		  "name" : "Toronto"
+	  }],
+	  "capital" : 401
+  },{
+	  "id" : 5,
+	  "name" : "Mexico",
+	  "cities" : [{
+		  "id" : 501,
+		  "name" : "Mexico City"
+	  },{
+		  "id" : 502,
+		  "name" : "Tijuana"
+	  },{
+		  "id" : 503,
+		  "name" : "JuÃ¡rez"
+	  },{
+		  "id" : 504,
+		  "name" : "Acapulco",
+		  "population" : 1137100
+	  }],
+	  "capital" : 501
+  },{
+	  "id" : 6,
+	  "name" : "Italy",
+	  "cities" : [{
+		  "id" : 601,
+		  "name" : "Rome"
+	  },{
+		  "id" : 602,
+		  "name" : "Milan"
+	  },{
+		  "id" : 603,
+		  "name" : "Naples"
+	  }],
+	  "capital" : 601
+  },{
+	  "id" : 17,
+	  "name" : "Germany",
+	  "cities" : [{
+		  "id" : 1701,
+		  "name" : "Berlin"
+	  },{
+		  "id" : 1702,
+		  "name" : "Frankfurt"
+	  },{
+		  "id" : 1703,
+		  "name" : "Hamburg"
+	  }],
+	  "capital" : 1701
+  },{
+	  "id" : 7,
+	  "name" : "Austria",
+	  "cities" : [{
+		  "id" : 701,
+		  "name" : "Vienna"
+	  },{
+		  "id" : 702,
+		  "name" : "Innsbruck"
+	  },{
+		  "id" : 703,
+		  "name" : "Salzburg"
+	  }],
+	  "capital" : 701
+  },{
+	  "id" : 8,
+	  "name" : "Switzerland",
+	  "cities" : [{
+		  "id" : 801,
+		  "name" : "Bern"
+	  },{
+		  "id" : 802,
+		  "name" : "Zurich"
+	  },{
+		  "id" : 803,
+		  "name" : "Lausanne"
+	  },{
+		  "id" : 804,
+		  "name" : "Lugano"
+	  }],
+	  "capital" : 801
+  },{
+	  "id" : 9,
+	  "name" : "Nigeria",
+	  "cities" : [{
+		  "id" : 901,
+		  "name" : "Lagos"
+	  },{
+		  "id" : 902,
+		  "name" : "Benin"
+	  }],
+	  "capital" : 901
+  },{
+	  "id" : 10,
+	  "name" : "China",
+	  "cities" : [{
+		  "id" : 1001,
+		  "name" : "Beijing"
+	  },{
+		  "id" : 1002,
+		  "name" : "Hong Kong"
+	  },{
+		  "id" : 1003,
+		  "name" : "Macau"
+	  }],
+	  "capital" : 1001
+  },{
+	  "id" : 11,
+	  "name" : "Russia",
+	  "cities" : [{
+		  "id" : 1101,
+		  "name" : "Moscow"
+	  },{
+		  "id" : 1102,
+		  "name" : "Saint Petersburg"
+	  },{
+		  "id" : 1103,
+		  "name" : "Novosibirsk"
+	  }],
+	  "capital" : 1101
+  }],
+  "bordering" : {
+	  "1" : [2],
+	  "2" : [1],
+	  "3" : [4, 5],
+	  "4" : [3],
+	  "5" : [3],
+	  "6" : [7, 8],
+	  "7" : [6, 8, 17],
+	  "8" : [6, 7, 17],
+	  "9" : [],
+	 "10" : [11],
+	 "11" : [10],
+	 "17" : [7, 8]
+  }
+}

@@ -1,0 +1,101 @@
+#{extends 'main.html' /}
+#{set title:'planner' /}
+
+
+<div>
+    <h1 class="name"><a href="/">World Map Journey Planner Page</a></h1>
+    <h2><a href="/">Planner</a></h2>
+</div>
+
+
+<div>
+    <a href="/check">Check</a> ::  <a href="/admin/">Admin Area</a>
+</div>
+
+#{ifErrors}
+<div>
+    <p style="color:green">All fields required</p>
+</div>
+#{/ifErrors}
+
+<!--calling the method planJourney from the form, and set up the list for user to choose country and city
+there are four choices in total-->
+#{form @Application.planJourney()}
+
+<!--departure country-->
+#{if countries}
+<div>
+    <strong>Select a departure country:</strong>
+        #{select 'countryID', items:countries, valueProperty:'id', labelProperty:'countryName', id:'countryName' /}
+</div>
+
+#{/if}
+#{else}
+<div>
+    <p>no countries</p>
+</div>
+
+#{/else}
+
+<!--departure city-->
+#{if cities}
+<div>
+    <strong>Select a departure city:</strong>
+        #{select 'cityID', items:cities, valueProperty:'id', labelProperty:'cityName', id:'cityName' /}
+</div>
+
+#{/if}
+#{else}
+<div>
+    <p>no cities</p>
+</div>
+
+#{/else}
+
+<!--arrival country-->
+#{if fcountries}
+<div>
+    <strong>Select an arrival country:</strong>
+        #{select 'countryid', items:countries, valueProperty:'id', labelProperty:'countryName', id:'countryName' /}
+</div>
+
+#{/if}
+#{else}
+<div>
+    <p>no countries</p>
+</div>
+
+#{/else}
+
+<!--arrival city-->
+#{if fcities}
+<div>
+    <strong>Select an arrival city:</strong>
+        #{select 'cityid', items:cities, valueProperty:'id', labelProperty:'cityName', id:'cityName' /}
+</div>
+
+#{/if}
+#{else}
+<div>
+    <p>no cities</p>
+</div>
+
+#{/else}
+
+
+<div>
+    <input type="submit" value="Plan Journey" />
+</div>
+
+
+#{/form}
+#{if flash.success}
+	 <p style="color:green">${flash.success}</p>
+#{/if}
+
+#{if flash.error}
+<div>
+    <p style="color:red">${flash.error}</p>
+</div>
+#{/if}
+

@@ -1,0 +1,60 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div>
+    <h1 class="name"><a href="/">World Map Check Page</a></h1>
+</div>
+
+<div>
+    <a href="/admin/">Admin Area</a> :: <a href="/planner">Journey Planner</a> :: <a href="/loader">Load JSON</a>
+</div>
+
+#{ifErrors}
+    <div>
+        <span color="red">All fields are required!</span>
+    </div>
+#{/ifErrors}
+
+<!--calling the method postCountryAndCity from the form, and set up the list for user to choose country and city-->
+#{form @Application.postCountryAndCity()}
+<div>
+    <strong>Select a country:</strong>
+    #{if countries}
+        #{select 'countryID', items:countries, valueProperty:'id', labelProperty:'countryName', id:'countryName' /}
+    #{/if}
+    #{else}
+    <div>
+        Unfortunately, there are no countries in the database.
+    </div>
+    #{/else}
+</div>
+
+<div>
+    <strong>Select an city:</strong>
+    #{if cities}
+        #{select 'cityID', items:cities, valueProperty:'id', labelProperty:'cityName', id:'cityName' /}
+    #{/if}
+    #{else}
+        <div>
+            Unfortunately, there are no cities in the database.
+        </div>
+    #{/else}
+</div>
+
+<div>
+    <input type="submit" value="Check" />
+</div>
+#{/form}
+
+<!--print results-->
+#{if flash.success}
+<div>
+    <p style="color:green">${flash.success}</p>
+</div>
+#{/if}
+
+#{if flash.error}
+<div>
+    <p style="color:red">${flash.error}</p>
+</div>
+#{/if}

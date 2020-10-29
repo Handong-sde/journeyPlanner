@@ -1,0 +1,10 @@
+05 Apr 2019 16:04:33,094 INFO  ~ Starting C:\Users\hando\OneDrive\Desktop\HandongWang-Assignment2
+05 Apr 2019 16:04:33,365 INFO  ~ Module secure is available (W:\play1-1.5.2\play1-1.5.2\modules\secure)
+05 Apr 2019 16:04:33,365 INFO  ~ Module crud is available (W:\play1-1.5.2\play1-1.5.2\modules\crud)
+05 Apr 2019 16:04:33,449 WARN  ~ You're running Play! in DEV mode
+05 Apr 2019 16:04:33,779 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+05 Apr 2019 16:04:42,773 INFO  ~ HikariPool-1 - Starting...
+05 Apr 2019 16:04:42,790 INFO  ~ HikariPool-1 - Start completed.
+05 Apr 2019 16:04:42,801 INFO  ~ Connected to jdbc:h2:mem:play for default
+05 Apr 2019 16:04:44,403 INFO  ~ Application 'tutorial4' is now started !
+05 Apr 2019 16:06:27,325 INFO  ~ Restart: 1 classes changed, caused by: java.lang.UnsupportedOperationException: class redefinition failed: attempted to delete a method

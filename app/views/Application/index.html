@@ -1,0 +1,40 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<div>
+    <h1 class="name"><a href="/">World Map Home Page!!!</a></h1>
+</div>
+
+<div>
+    <a href="/check">Check</a> :: <a href="/planner">Journey Planner</a> :: <a href="/loader">Load JSON</a> :: <a href="/admin/">Admin Area</a> 
+</div>
+<div>
+
+<!--set up the page and a table for country, provide each country name with a link to their details-->
+    <h2>Countries</h2>
+    #{if countries}
+        <div >    
+            There are <strong>${countries.size()}</strong> countries in the database.
+
+            <table style="width:100%">
+                <tr>
+                    <th>Country ID</th>
+                    <th>Name</th> 
+                    <th>city Number</th>
+                </tr>
+                #{list items:countries, as:'country'}
+                <tr>
+                    <td>${country.countryID}</td>
+                    <td><a href="@{Application.show(country.countryID)}">${country.countryName}</a></td> 
+                    <td>${country.cityMap.size()}</td>
+                </tr>
+                #{/list}
+            </table>
+        </div>
+    #{/if}
+    #{else}
+        <div>
+            Unfortunately, there are no countries in the database.
+        </div>
+    #{/else}
+</div>

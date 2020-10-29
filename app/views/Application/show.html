@@ -1,0 +1,70 @@
+#{extends 'main.html' /}
+#{set title:'show Country' /}
+
+<div>
+    <h1 class="name"><a href="/">World Map Country Details</a></h1>
+</div>
+
+<div>
+    <a href="/check">Check</a> :: <a href="/planner">Journey Planner</a>:: <a href="/admin/">Admin Area</a> 
+</div>
+
+<!--show country properties-->
+<div>
+
+	<h2>${country.countryName}</h2>
+    <p>Capital: <strong>${country.capital.cityName}</strong></p>
+    <p>Population:<strong>${country.countryPopulation}</strong></p>
+    
+</div>
+
+<!--show bordering countries and provide link to each country name-->
+<h2>Bordering countries</h2>
+
+    <div>
+        There are <strong>${bordering.size()}</strong> bordering countries to ${country.countryName}
+        <table style="width:100%">
+            <tr>
+                <th>Country ID</th>
+                <th>Name</th> 
+            </tr>
+            #{list items:bordering, as:'country'}
+                <tr>
+                    <td>${country.countryID}</td>
+                    <td><a href="@{Application.show(country.countryID)}">${country.countryName}</a></td> 
+                </tr>
+            #{/list}
+        </table>
+    </div>
+
+
+<div>
+<!--show cities in that conntry and provide link to each city name-->
+    <h2>Cities</h2>
+    #{if cities}
+        <div >    
+            There are <strong>${cities.size()}</strong> cities in the database.
+
+            <table style="width:100%">
+                <tr>
+                    <th>City ID</th>
+                    <th>City Name</th>
+                    <th>City Population</th> 
+                </tr>
+                #{list items:cities, as:'city'}
+                <tr>
+                    <td>${city.cityID}</td>
+                    <td><a href="@{Application.showCity(city.cityID)}">${city.cityName}</a></td> 
+                    <td>${city.cityPopulation}</td> 
+                </tr>
+                #{/list}
+            </table>
+        </div>
+    #{/if}
+    #{else}
+        <div>
+            Unfortunately, there are no city in the database.
+        </div>
+    #{/else}
+</div>
+
